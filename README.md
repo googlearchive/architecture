@@ -1,8 +1,8 @@
-.tmp
+architecture
 ---------------
 
 Welcome to the example application used in angular.io/dart's
-[.tmp](//github.com/angular/angular.io/tree/master/public/docs/_examples/architecture/dart) page.
+[architecture](//github.com/angular/angular.io/tree/master/public/docs/_examples/architecture/dart) page.
 
 To run your own copy:
 
