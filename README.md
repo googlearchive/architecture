@@ -1,13 +1,10 @@
-**WARNING:** This example is preliminary and will probably change.
 
-------------------------------------------------------------------
-      
 
-architecture
+Architecture overview
 ---------------
 
 Welcome to the example application used in angular.io/dart's
-[architecture](//github.com/angular/angular.io/tree/master/public/docs/_examples/architecture/dart) page.
+[Architecture overview](https://angular.io/docs/dart/latest/guide/architecture.html) page.
 
 To run your own copy:
 
