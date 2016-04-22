@@ -1,0 +1,14 @@
+{
+  "ngDeps": null,
+  "type": {
+    "Hero": {
+      "class": "Identifier",
+      "name": "Hero",
+      "moduleUrl": "asset:developer_guide_intro/lib/hero.dart",
+      "prefix": null,
+      "constConstructor": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

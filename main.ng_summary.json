@@ -1,0 +1,39 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/platform/browser_static.dart",
+        "5": false
+      },
+      {
+        "1": "package:developer_guide_intro/backend_service.dart",
+        "5": false
+      },
+      {
+        "1": "package:developer_guide_intro/hero_list_component.dart",
+        "5": false
+      },
+      {
+        "1": "package:developer_guide_intro/hero_service.dart",
+        "5": false
+      },
+      {
+        "1": "package:developer_guide_intro/logger_service.dart",
+        "5": false
+      }
+    ],
+    "6": "main.dart"
+  },
+  "type": {
+    "main": {
+      "class": "Identifier",
+      "name": "main",
+      "moduleUrl": "asset:developer_guide_intro/web/main.dart",
+      "prefix": null,
+      "constConstructor": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

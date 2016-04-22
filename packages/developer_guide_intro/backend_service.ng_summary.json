@@ -1,0 +1,72 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "hero.dart",
+        "5": false
+      },
+      {
+        "1": "logger_service.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "BackendService",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Logger",
+            "4": "_logger"
+          }
+        ]
+      }
+    ],
+    "6": "backend_service.dart"
+  },
+  "type": {
+    "BackendService": {
+      "class": "Type",
+      "name": "BackendService",
+      "moduleUrl": "asset:developer_guide_intro/lib/backend_service.dart",
+      "prefix": null,
+      "isHost": false,
+      "constConstructor": null,
+      "value": null,
+      "diDeps": [
+        {
+          "token": {
+            "class": "Identifier",
+            "name": "Logger",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "query": null,
+          "viewQuery": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false
+        }
+      ]
+    }
+  },
+  "alias": {}
+}
