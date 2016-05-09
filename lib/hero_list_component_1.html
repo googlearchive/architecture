@@ -2,5 +2,5 @@
 <hero-detail ... [hero]="selectedHero"></hero-detail>
 <div ... (click)="selectHero(hero)">...</div>
 
-<div *ngFor="#hero of heroes" ...>...</div>
+<div *ngFor="let hero of heroes" ...>...</div>
 <hero-detail *ngIf="selectedHero != null" ...></hero-detail>
