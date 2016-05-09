@@ -25,11 +25,7 @@
         "4": [
           {
             "1": "Injectable",
-            "4": false,
-            "5": false,
-            "6": false,
-            "7": true,
-            "8": false
+            "4": false
           }
         ],
         "5": [
@@ -45,21 +41,21 @@
       }
     ],
     "6": "hero_service.dart",
-    "10": [
+    "7": [
       {
-        "1": "package:angular2/core.template.dart",
+        "1": "package:angular2/core.ngfactory.dart",
         "4": "i0"
       },
       {
-        "1": "backend_service.template.dart",
+        "1": "backend_service.ngfactory.dart",
         "4": "i1"
       },
       {
-        "1": "hero.template.dart",
+        "1": "hero.ngfactory.dart",
         "4": "i2"
       },
       {
-        "1": "logger_service.template.dart",
+        "1": "logger_service.ngfactory.dart",
         "4": "i3"
       }
     ]
@@ -71,42 +67,51 @@
       "moduleUrl": "asset:developer_guide_intro/lib/hero_service.dart",
       "prefix": null,
       "isHost": false,
-      "constConstructor": null,
       "value": null,
       "diDeps": [
         {
           "token": {
-            "class": "Identifier",
-            "name": "Logger",
-            "moduleUrl": "asset:developer_guide_intro/lib/logger_service.dart",
-            "prefix": null,
-            "constConstructor": null,
-            "value": null
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "Logger",
+              "moduleUrl": "asset:developer_guide_intro/lib/logger_service.dart",
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
           },
           "query": null,
           "viewQuery": null,
+          "value": null,
           "isAttribute": false,
           "isSelf": false,
           "isHost": false,
           "isSkipSelf": false,
-          "isOptional": false
+          "isOptional": false,
+          "isValue": false
         },
         {
           "token": {
-            "class": "Identifier",
-            "name": "BackendService",
-            "moduleUrl": "asset:developer_guide_intro/lib/backend_service.dart",
-            "prefix": null,
-            "constConstructor": null,
-            "value": null
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "BackendService",
+              "moduleUrl": "asset:developer_guide_intro/lib/backend_service.dart",
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
           },
           "query": null,
           "viewQuery": null,
+          "value": null,
           "isAttribute": false,
           "isSelf": false,
           "isHost": false,
           "isSkipSelf": false,
-          "isOptional": false
+          "isOptional": false,
+          "isValue": false
         }
       ]
     }

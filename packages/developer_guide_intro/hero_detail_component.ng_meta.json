@@ -13,52 +13,17 @@
     ],
     "5": [
       {
-        "1": "HeroDetailComponent",
-        "4": [
-          {
-            "1": "Component",
-            "3": [
-              {
-                "1": "selector",
-                "2": "'hero-detail'"
-              },
-              {
-                "1": "templateUrl",
-                "2": "'hero_detail_component.html'"
-              }
-            ],
-            "4": false,
-            "5": true,
-            "6": true,
-            "7": true,
-            "8": false
-          }
-        ],
-        "7": [
-          {
-            "1": "hero",
-            "2": [
-              {
-                "1": "Input",
-                "4": false,
-                "5": false,
-                "6": false,
-                "7": false,
-                "8": false
-              }
-            ]
-          }
-        ]
+        "1": "HeroDetailComponent"
       }
     ],
     "6": "hero_detail_component.dart",
-    "10": [
+    "7": [
       {
-        "1": "package:angular2/core.template.dart",
+        "1": "package:angular2/core.ngfactory.dart",
         "4": "i0"
       },
       {
-        "1": "hero.template.dart",
+        "1": "hero.ngfactory.dart",
         "4": "i1"
       }
     ]
@@ -67,7 +32,6 @@
     "HeroDetailComponent": {
       "class": "Directive",
       "isComponent": true,
-      "dynamicLoadable": true,
       "selector": "hero-detail",
       "exportAs": null,
       "type": {
@@ -76,7 +40,6 @@
         "moduleUrl": "asset:developer_guide_intro/lib/hero_detail_component.dart",
         "prefix": null,
         "isHost": false,
-        "constConstructor": null,
         "value": null,
         "diDeps": []
       },

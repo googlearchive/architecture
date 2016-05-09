@@ -24,25 +24,25 @@
       }
     ],
     "6": "main.dart",
-    "10": [
+    "7": [
       {
-        "1": "package:angular2/platform/browser_static.template.dart",
+        "1": "package:angular2/platform/browser_static.ngfactory.dart",
         "4": "i0"
       },
       {
-        "1": "package:developer_guide_intro/backend_service.template.dart",
+        "1": "package:developer_guide_intro/backend_service.ngfactory.dart",
         "4": "i1"
       },
       {
-        "1": "package:developer_guide_intro/hero_list_component.template.dart",
+        "1": "package:developer_guide_intro/hero_list_component.ngfactory.dart",
         "4": "i2"
       },
       {
-        "1": "package:developer_guide_intro/hero_service.template.dart",
+        "1": "package:developer_guide_intro/hero_service.ngfactory.dart",
         "4": "i3"
       },
       {
-        "1": "package:developer_guide_intro/logger_service.template.dart",
+        "1": "package:developer_guide_intro/logger_service.ngfactory.dart",
         "4": "i4"
       }
     ]
@@ -53,7 +53,6 @@
       "name": "main",
       "moduleUrl": "asset:developer_guide_intro/web/main.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     }
   },

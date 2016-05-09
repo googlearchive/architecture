@@ -22,41 +22,13 @@
     "5": [
       {
         "1": "HeroListComponent",
-        "4": [
-          {
-            "1": "Component",
-            "3": [
-              {
-                "1": "selector",
-                "2": "'hero-list'"
-              },
-              {
-                "1": "templateUrl",
-                "2": "'hero_list_component.html'"
-              },
-              {
-                "1": "directives",
-                "2": "const [HeroDetailComponent]"
-              },
-              {
-                "1": "providers",
-                "2": "const [HeroService]"
-              }
-            ],
-            "4": false,
-            "5": true,
-            "6": true,
-            "7": true,
-            "8": false
-          }
-        ],
         "5": [
           {
             "1": "HeroService",
             "4": "heroService"
           }
         ],
-        "8": [
+        "7": [
           {
             "2": "HeroDetailComponent"
           }
@@ -64,21 +36,21 @@
       }
     ],
     "6": "hero_list_component.dart",
-    "10": [
+    "7": [
       {
-        "1": "package:angular2/core.template.dart",
+        "1": "package:angular2/core.ngfactory.dart",
         "4": "i0"
       },
       {
-        "1": "hero.template.dart",
+        "1": "hero.ngfactory.dart",
         "4": "i1"
       },
       {
-        "1": "hero_detail_component.template.dart",
+        "1": "hero_detail_component.ngfactory.dart",
         "4": "i2"
       },
       {
-        "1": "hero_service.template.dart",
+        "1": "hero_service.ngfactory.dart",
         "4": "i3"
       }
     ]
@@ -87,7 +59,6 @@
     "HeroListComponent": {
       "class": "Directive",
       "isComponent": true,
-      "dynamicLoadable": true,
       "selector": "hero-list",
       "exportAs": null,
       "type": {
@@ -96,25 +67,29 @@
         "moduleUrl": "asset:developer_guide_intro/lib/hero_list_component.dart",
         "prefix": null,
         "isHost": false,
-        "constConstructor": null,
         "value": null,
         "diDeps": [
           {
             "token": {
-              "class": "Identifier",
-              "name": "HeroService",
-              "moduleUrl": "asset:developer_guide_intro/lib/hero_service.dart",
-              "prefix": null,
-              "constConstructor": null,
-              "value": null
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "HeroService",
+                "moduleUrl": "asset:developer_guide_intro/lib/hero_service.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
             },
             "query": null,
             "viewQuery": null,
+            "value": null,
             "isAttribute": false,
             "isSelf": false,
             "isHost": false,
             "isSkipSelf": false,
-            "isOptional": false
+            "isOptional": false,
+            "isValue": false
           }
         ]
       },
@@ -127,7 +102,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "<h2>Hero List</h2>\n\n<div *ngFor=\"#hero of heroes\" (click)=\"selectHero(hero)\">\n  {{hero.name}}\n</div>\n\n<hero-detail *ngIf=\"selectedHero != null\" [hero]=\"selectedHero\"></hero-detail>\n",
+        "template": "<h2>Hero List</h2>\n\n<div *ngFor=\"let hero of heroes\" (click)=\"selectHero(hero)\">\n  {{hero.name}}\n</div>\n\n<hero-detail *ngIf=\"selectedHero != null\" [hero]=\"selectedHero\"></hero-detail>\n",
         "templateUrl": "asset:developer_guide_intro/lib/hero_list_component.html",
         "styles": [],
         "styleUrls": [],
@@ -137,49 +112,62 @@
         {
           "class": "Provider",
           "token": {
-            "class": "Type",
-            "name": "HeroService",
-            "moduleUrl": "asset:developer_guide_intro/lib/hero_service.dart",
-            "prefix": null,
-            "isHost": false,
-            "constConstructor": null,
             "value": null,
-            "diDeps": [
-              {
-                "token": {
-                  "class": "Identifier",
-                  "name": "Logger",
-                  "moduleUrl": "asset:developer_guide_intro/lib/logger_service.dart",
-                  "prefix": null,
-                  "constConstructor": null,
-                  "value": null
+            "identifier": {
+              "class": "Type",
+              "name": "HeroService",
+              "moduleUrl": "asset:developer_guide_intro/lib/hero_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "Logger",
+                      "moduleUrl": "asset:developer_guide_intro/lib/logger_service.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "query": null,
+                  "viewQuery": null,
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
                 },
-                "query": null,
-                "viewQuery": null,
-                "isAttribute": false,
-                "isSelf": false,
-                "isHost": false,
-                "isSkipSelf": false,
-                "isOptional": false
-              },
-              {
-                "token": {
-                  "class": "Identifier",
-                  "name": "BackendService",
-                  "moduleUrl": "asset:developer_guide_intro/lib/backend_service.dart",
-                  "prefix": null,
-                  "constConstructor": null,
-                  "value": null
-                },
-                "query": null,
-                "viewQuery": null,
-                "isAttribute": false,
-                "isSelf": false,
-                "isHost": false,
-                "isSkipSelf": false,
-                "isOptional": false
-              }
-            ]
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "BackendService",
+                      "moduleUrl": "asset:developer_guide_intro/lib/backend_service.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "query": null,
+                  "viewQuery": null,
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
           },
           "useClass": {
             "class": "Type",
@@ -187,48 +175,59 @@
             "moduleUrl": "asset:developer_guide_intro/lib/hero_service.dart",
             "prefix": null,
             "isHost": false,
-            "constConstructor": null,
             "value": null,
             "diDeps": [
               {
                 "token": {
-                  "class": "Identifier",
-                  "name": "Logger",
-                  "moduleUrl": "asset:developer_guide_intro/lib/logger_service.dart",
-                  "prefix": null,
-                  "constConstructor": null,
-                  "value": null
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "Logger",
+                    "moduleUrl": "asset:developer_guide_intro/lib/logger_service.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
                 },
                 "query": null,
                 "viewQuery": null,
+                "value": null,
                 "isAttribute": false,
                 "isSelf": false,
                 "isHost": false,
                 "isSkipSelf": false,
-                "isOptional": false
+                "isOptional": false,
+                "isValue": false
               },
               {
                 "token": {
-                  "class": "Identifier",
-                  "name": "BackendService",
-                  "moduleUrl": "asset:developer_guide_intro/lib/backend_service.dart",
-                  "prefix": null,
-                  "constConstructor": null,
-                  "value": null
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "BackendService",
+                    "moduleUrl": "asset:developer_guide_intro/lib/backend_service.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
                 },
                 "query": null,
                 "viewQuery": null,
+                "value": null,
                 "isAttribute": false,
                 "isSelf": false,
                 "isHost": false,
                 "isSkipSelf": false,
-                "isOptional": false
+                "isOptional": false,
+                "isValue": false
               }
             ]
           },
           "useExisting": null,
           "useValue": null,
-          "useFactory": null
+          "useFactory": null,
+          "multi": false,
+          "deps": null
         }
       ],
       "viewProviders": [],
