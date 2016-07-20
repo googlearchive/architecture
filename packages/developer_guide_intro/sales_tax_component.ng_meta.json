@@ -29,15 +29,15 @@
     "6": "sales_tax_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "sales_tax_service.ngfactory.dart",
+        "1": "sales_tax_service.template.dart",
         "4": "i1"
       },
       {
-        "1": "tax_rate_service.ngfactory.dart",
+        "1": "tax_rate_service.template.dart",
         "4": "i2"
       }
     ]
@@ -169,6 +169,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -199,6 +200,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }

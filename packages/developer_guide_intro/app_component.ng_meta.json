@@ -31,15 +31,15 @@
     "6": "app_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "hero_list_component.ngfactory.dart",
+        "1": "hero_list_component.template.dart",
         "4": "i1"
       },
       {
-        "1": "sales_tax_component.ngfactory.dart",
+        "1": "sales_tax_component.template.dart",
         "4": "i2"
       }
     ]

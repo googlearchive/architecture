@@ -31,11 +31,11 @@
     "6": "sales_tax_service.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "tax_rate_service.ngfactory.dart",
+        "1": "tax_rate_service.template.dart",
         "4": "i1"
       }
     ]
