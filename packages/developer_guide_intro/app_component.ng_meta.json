@@ -7,46 +7,60 @@
         "5": false
       },
       {
-        "1": "hero.dart",
+        "1": "hero_list_component.dart",
+        "5": false
+      },
+      {
+        "1": "sales_tax_component.dart",
         "5": false
       }
     ],
     "5": [
       {
-        "1": "HeroDetailComponent"
+        "1": "AppComponent",
+        "7": [
+          {
+            "2": "HeroListComponent"
+          },
+          {
+            "2": "SalesTaxComponent"
+          }
+        ]
       }
     ],
-    "6": "hero_detail_component.dart",
+    "6": "app_component.dart",
     "7": [
       {
         "1": "package:angular2/core.ngfactory.dart",
         "4": "i0"
       },
       {
-        "1": "hero.ngfactory.dart",
+        "1": "hero_list_component.ngfactory.dart",
         "4": "i1"
+      },
+      {
+        "1": "sales_tax_component.ngfactory.dart",
+        "4": "i2"
       }
     ]
   },
   "type": {
-    "HeroDetailComponent": {
+    "AppComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "hero-detail",
+      "selector": "my-app",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "HeroDetailComponent",
-        "moduleUrl": "asset:developer_guide_intro/lib/hero_detail_component.dart",
+        "name": "AppComponent",
+        "moduleUrl": "asset:developer_guide_intro/lib/app_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
         "diDeps": []
       },
       "changeDetection": 5,
-      "inputs": {
-        "hero": "hero"
-      },
+      "inputs": {},
       "outputs": {},
       "hostListeners": {},
       "hostProperties": {},
@@ -54,8 +68,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "<hr>\n<h4>{{hero.name}} Detail</h4>\n<div>Id: {{hero.id}}</div>\n<div>Name:\n  <input [(ngModel)]=\"hero.name\">\n</div>\n<div>Power:<input [(ngModel)]=\"hero.power\"></div>\n",
-        "templateUrl": "asset:developer_guide_intro/lib/hero_detail_component.html",
+        "template": "      <hero-list></hero-list>\n      <sales-tax></sales-tax>",
+        "templateUrl": "asset:developer_guide_intro/lib/app_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

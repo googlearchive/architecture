@@ -7,11 +7,11 @@
         "5": false
       },
       {
-        "1": "package:developer_guide_intro/backend_service.dart",
+        "1": "package:developer_guide_intro/app_component.dart",
         "5": false
       },
       {
-        "1": "package:developer_guide_intro/hero_list_component.dart",
+        "1": "package:developer_guide_intro/backend_service.dart",
         "5": false
       },
       {
@@ -30,11 +30,11 @@
         "4": "i0"
       },
       {
-        "1": "package:developer_guide_intro/backend_service.ngfactory.dart",
+        "1": "package:developer_guide_intro/app_component.ngfactory.dart",
         "4": "i1"
       },
       {
-        "1": "package:developer_guide_intro/hero_list_component.ngfactory.dart",
+        "1": "package:developer_guide_intro/backend_service.ngfactory.dart",
         "4": "i2"
       },
       {
