@@ -1,6 +1,0 @@
-<li>{{hero.name}}</li>
-<hero-detail [hero]="selectedHero"></hero-detail>
-<li (click)="selectHero(hero)"></li>
-
-<li *ngFor="let hero of heroes"></li>
-<hero-detail *ngIf="selectedHero != null"></hero-detail>
