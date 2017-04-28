@@ -164,7 +164,6 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -195,7 +194,6 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         }
