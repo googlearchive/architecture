@@ -1,12 +1,18 @@
 import 'package:angular2/angular2.dart';
 
-import 'hero_list_component.dart';
-import 'sales_tax_component.dart';
+import 'src/backend_service.dart';
+import 'src/hero_list_component.dart';
+import 'src/hero_service.dart';
+import 'src/logger_service.dart';
+import 'src/sales_tax_component.dart';
 
 @Component(
-    selector: 'my-app',
-    template: '''
-      <hero-list></hero-list>
-      <sales-tax></sales-tax>''',
-    directives: const [HeroListComponent, SalesTaxComponent])
+  selector: 'my-app',
+  template: '''
+    <hero-list></hero-list>
+    <sales-tax></sales-tax>
+  ''',
+  directives: const [HeroListComponent, SalesTaxComponent],
+  providers: const [BackendService, HeroService, Logger],
+)
 class AppComponent {}
