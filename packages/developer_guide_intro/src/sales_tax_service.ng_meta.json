@@ -3,25 +3,17 @@
     "1": "",
     "3": [
       {
-        "1": "dart:async",
-        "5": false
-      },
-      {
         "1": "package:angular2/angular2.dart",
         "5": false
       },
       {
-        "1": "hero.dart",
-        "5": false
-      },
-      {
-        "1": "logger_service.dart",
+        "1": "tax_rate_service.dart",
         "5": false
       }
     ],
     "5": [
       {
-        "1": "BackendService",
+        "1": "SalesTaxService",
         "4": [
           {
             "1": "Injectable",
@@ -30,33 +22,29 @@
         ],
         "5": [
           {
-            "1": "Logger",
-            "4": "_logger"
+            "1": "TaxRateService",
+            "4": "rateService"
           }
         ]
       }
     ],
-    "6": "backend_service.dart",
+    "6": "sales_tax_service.dart",
     "7": [
       {
         "1": "package:angular2/angular2.template.dart",
         "4": "i0"
       },
       {
-        "1": "hero.template.dart",
+        "1": "tax_rate_service.template.dart",
         "4": "i1"
-      },
-      {
-        "1": "logger_service.template.dart",
-        "4": "i2"
       }
     ]
   },
   "type": {
-    "BackendService": {
+    "SalesTaxService": {
       "class": "Type",
-      "name": "BackendService",
-      "moduleUrl": "asset:developer_guide_intro/lib/backend_service.dart",
+      "name": "SalesTaxService",
+      "moduleUrl": "asset:developer_guide_intro/lib/src/sales_tax_service.dart",
       "prefix": null,
       "isHost": false,
       "value": null,
@@ -66,8 +54,8 @@
             "value": null,
             "identifier": {
               "class": "Identifier",
-              "name": "Logger",
-              "moduleUrl": "asset:developer_guide_intro/lib/logger_service.dart",
+              "name": "TaxRateService",
+              "moduleUrl": "asset:developer_guide_intro/lib/src/tax_rate_service.dart",
               "prefix": null,
               "value": null
             },

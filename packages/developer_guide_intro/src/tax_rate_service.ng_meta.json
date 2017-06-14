@@ -18,13 +18,19 @@
         ]
       }
     ],
-    "6": "tax_rate_service.dart"
+    "6": "tax_rate_service.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      }
+    ]
   },
   "type": {
     "TaxRateService": {
       "class": "Type",
       "name": "TaxRateService",
-      "moduleUrl": "asset:developer_guide_intro/lib/tax_rate_service.dart",
+      "moduleUrl": "asset:developer_guide_intro/lib/src/tax_rate_service.dart",
       "prefix": null,
       "isHost": false,
       "value": null,

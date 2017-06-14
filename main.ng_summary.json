@@ -9,18 +9,6 @@
       {
         "1": "package:developer_guide_intro/app_component.dart",
         "5": false
-      },
-      {
-        "1": "package:developer_guide_intro/backend_service.dart",
-        "5": false
-      },
-      {
-        "1": "package:developer_guide_intro/hero_service.dart",
-        "5": false
-      },
-      {
-        "1": "package:developer_guide_intro/logger_service.dart",
-        "5": false
       }
     ],
     "6": "main.dart"

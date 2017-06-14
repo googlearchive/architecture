@@ -1,0 +1,116 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "backend_service.dart",
+        "5": false
+      },
+      {
+        "1": "hero.dart",
+        "5": false
+      },
+      {
+        "1": "logger_service.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "HeroService",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Logger",
+            "4": "_logger"
+          },
+          {
+            "1": "BackendService",
+            "4": "_backendService"
+          }
+        ]
+      }
+    ],
+    "6": "hero_service.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "backend_service.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "hero.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "logger_service.template.dart",
+        "4": "i3"
+      }
+    ]
+  },
+  "type": {
+    "HeroService": {
+      "class": "Type",
+      "name": "HeroService",
+      "moduleUrl": "asset:developer_guide_intro/lib/src/hero_service.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": [
+        {
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "Logger",
+              "moduleUrl": "asset:developer_guide_intro/lib/src/logger_service.dart",
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "value": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false,
+          "isValue": false
+        },
+        {
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "BackendService",
+              "moduleUrl": "asset:developer_guide_intro/lib/src/backend_service.dart",
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "value": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false,
+          "isValue": false
+        }
+      ]
+    }
+  },
+  "alias": {}
+}

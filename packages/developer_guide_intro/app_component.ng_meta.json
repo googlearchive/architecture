@@ -7,11 +7,23 @@
         "5": false
       },
       {
-        "1": "hero_list_component.dart",
+        "1": "src/backend_service.dart",
         "5": false
       },
       {
-        "1": "sales_tax_component.dart",
+        "1": "src/hero_list_component.dart",
+        "5": false
+      },
+      {
+        "1": "src/hero_service.dart",
+        "5": false
+      },
+      {
+        "1": "src/logger_service.dart",
+        "5": false
+      },
+      {
+        "1": "src/sales_tax_component.dart",
         "5": false
       }
     ],
@@ -35,12 +47,24 @@
         "4": "i0"
       },
       {
-        "1": "hero_list_component.template.dart",
+        "1": "src/backend_service.template.dart",
         "4": "i1"
       },
       {
-        "1": "sales_tax_component.template.dart",
+        "1": "src/hero_list_component.template.dart",
         "4": "i2"
+      },
+      {
+        "1": "src/hero_service.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "src/logger_service.template.dart",
+        "4": "i4"
+      },
+      {
+        "1": "src/sales_tax_component.template.dart",
+        "4": "i5"
       }
     ]
   },
@@ -69,13 +93,228 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <hero-list></hero-list>\n      <sales-tax></sales-tax>",
+        "template": "    <hero-list></hero-list>\n    <sales-tax></sales-tax>\n  ",
         "templateUrl": "asset:developer_guide_intro/lib/app_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
       },
-      "providers": [],
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "BackendService",
+              "moduleUrl": "asset:developer_guide_intro/lib/src/backend_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "Logger",
+                      "moduleUrl": "asset:developer_guide_intro/lib/src/logger_service.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "BackendService",
+            "moduleUrl": "asset:developer_guide_intro/lib/src/backend_service.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": [
+              {
+                "token": {
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "Logger",
+                    "moduleUrl": "asset:developer_guide_intro/lib/src/logger_service.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
+                },
+                "value": null,
+                "isAttribute": false,
+                "isSelf": false,
+                "isHost": false,
+                "isSkipSelf": false,
+                "isOptional": false,
+                "isValue": false
+              }
+            ]
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "HeroService",
+              "moduleUrl": "asset:developer_guide_intro/lib/src/hero_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "Logger",
+                      "moduleUrl": "asset:developer_guide_intro/lib/src/logger_service.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                },
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "BackendService",
+                      "moduleUrl": "asset:developer_guide_intro/lib/src/backend_service.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "HeroService",
+            "moduleUrl": "asset:developer_guide_intro/lib/src/hero_service.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": [
+              {
+                "token": {
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "Logger",
+                    "moduleUrl": "asset:developer_guide_intro/lib/src/logger_service.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
+                },
+                "value": null,
+                "isAttribute": false,
+                "isSelf": false,
+                "isHost": false,
+                "isSkipSelf": false,
+                "isOptional": false,
+                "isValue": false
+              },
+              {
+                "token": {
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "BackendService",
+                    "moduleUrl": "asset:developer_guide_intro/lib/src/backend_service.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
+                },
+                "value": null,
+                "isAttribute": false,
+                "isSelf": false,
+                "isHost": false,
+                "isSkipSelf": false,
+                "isOptional": false,
+                "isValue": false
+              }
+            ]
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "Logger",
+              "moduleUrl": "asset:developer_guide_intro/lib/src/logger_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "Logger",
+            "moduleUrl": "asset:developer_guide_intro/lib/src/logger_service.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": []
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []

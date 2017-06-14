@@ -3,11 +3,11 @@
     "1": "",
     "3": [
       {
-        "1": "dart:async",
+        "1": "package:angular2/angular2.dart",
         "5": false
       },
       {
-        "1": "package:angular2/angular2.dart",
+        "1": "backend_service.dart",
         "5": false
       },
       {
@@ -21,7 +21,7 @@
     ],
     "5": [
       {
-        "1": "BackendService",
+        "1": "HeroService",
         "4": [
           {
             "1": "Injectable",
@@ -32,17 +32,21 @@
           {
             "1": "Logger",
             "4": "_logger"
+          },
+          {
+            "1": "BackendService",
+            "4": "_backendService"
           }
         ]
       }
     ],
-    "6": "backend_service.dart"
+    "6": "hero_service.dart"
   },
   "type": {
-    "BackendService": {
+    "HeroService": {
       "class": "Type",
-      "name": "BackendService",
-      "moduleUrl": "asset:developer_guide_intro/lib/backend_service.dart",
+      "name": "HeroService",
+      "moduleUrl": "asset:developer_guide_intro/lib/src/hero_service.dart",
       "prefix": null,
       "isHost": false,
       "value": null,
@@ -53,6 +57,26 @@
             "identifier": {
               "class": "Identifier",
               "name": "Logger",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "value": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false,
+          "isValue": false
+        },
+        {
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "BackendService",
               "moduleUrl": null,
               "prefix": null,
               "value": null

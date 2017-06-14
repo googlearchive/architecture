@@ -7,70 +7,61 @@
         "5": false
       },
       {
-        "1": "hero.dart",
+        "1": "sales_tax_service.dart",
         "5": false
       },
       {
-        "1": "hero_detail_component.dart",
-        "5": false
-      },
-      {
-        "1": "hero_service.dart",
+        "1": "tax_rate_service.dart",
         "5": false
       }
     ],
     "5": [
       {
-        "1": "HeroListComponent",
+        "1": "SalesTaxComponent",
         "5": [
           {
-            "1": "HeroService",
-            "4": "_heroService"
+            "1": "SalesTaxService",
+            "4": "_salesTaxService"
           }
-        ],
-        "6": [
-          "OnInit"
         ],
         "7": [
           {
-            "2": "COMMON_DIRECTIVES"
-          },
+            "2": "CORE_DIRECTIVES"
+          }
+        ],
+        "8": [
           {
-            "2": "HeroDetailComponent"
+            "2": "COMMON_PIPES"
           }
         ]
       }
     ],
-    "6": "hero_list_component.dart",
+    "6": "sales_tax_component.dart",
     "7": [
       {
         "1": "package:angular2/angular2.template.dart",
         "4": "i0"
       },
       {
-        "1": "hero.template.dart",
+        "1": "sales_tax_service.template.dart",
         "4": "i1"
       },
       {
-        "1": "hero_detail_component.template.dart",
+        "1": "tax_rate_service.template.dart",
         "4": "i2"
-      },
-      {
-        "1": "hero_service.template.dart",
-        "4": "i3"
       }
     ]
   },
   "type": {
-    "HeroListComponent": {
+    "SalesTaxComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "hero-list",
+      "selector": "sales-tax",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "HeroListComponent",
-        "moduleUrl": "asset:developer_guide_intro/lib/hero_list_component.dart",
+        "name": "SalesTaxComponent",
+        "moduleUrl": "asset:developer_guide_intro/lib/src/sales_tax_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -80,8 +71,8 @@
               "value": null,
               "identifier": {
                 "class": "Identifier",
-                "name": "HeroService",
-                "moduleUrl": "asset:developer_guide_intro/lib/hero_service.dart",
+                "name": "SalesTaxService",
+                "moduleUrl": "asset:developer_guide_intro/lib/src/sales_tax_service.dart",
                 "prefix": null,
                 "value": null
               },
@@ -104,13 +95,11 @@
       "hostListeners": {},
       "hostProperties": {},
       "hostAttributes": {},
-      "lifecycleHooks": [
-        0
-      ],
+      "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "<h2>Hero List</h2>\n\n<p><i>Pick a hero from the list</i></p>\n<ul>\n  <li *ngFor=\"let hero of heroes\" (click)=\"selectHero(hero)\">\n    {{hero.name}}\n  </li>\n</ul>\n\n<hero-detail *ngIf=\"selectedHero != null\" [hero]=\"selectedHero\"></hero-detail>\n",
-        "templateUrl": "asset:developer_guide_intro/lib/hero_list_component.html",
+        "template": "      <h2>Sales Tax Calculator</h2>\n      Amount: <input #amountBox (change)=\"0\">\n\n      <div *ngIf=\"amountBox.value != ''\">\n      The sales tax is\n       {{ getTax(amountBox.value) | currency:'USD':true:'1.2-2' }}\n      </div>\n    ",
+        "templateUrl": "asset:developer_guide_intro/lib/src/sales_tax_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
@@ -122,8 +111,8 @@
             "value": null,
             "identifier": {
               "class": "Type",
-              "name": "HeroService",
-              "moduleUrl": "asset:developer_guide_intro/lib/hero_service.dart",
+              "name": "SalesTaxService",
+              "moduleUrl": "asset:developer_guide_intro/lib/src/sales_tax_service.dart",
               "prefix": null,
               "isHost": false,
               "value": null,
@@ -133,28 +122,8 @@
                     "value": null,
                     "identifier": {
                       "class": "Identifier",
-                      "name": "Logger",
-                      "moduleUrl": "asset:developer_guide_intro/lib/logger_service.dart",
-                      "prefix": null,
-                      "value": null
-                    },
-                    "identifierIsInstance": false
-                  },
-                  "value": null,
-                  "isAttribute": false,
-                  "isSelf": false,
-                  "isHost": false,
-                  "isSkipSelf": false,
-                  "isOptional": false,
-                  "isValue": false
-                },
-                {
-                  "token": {
-                    "value": null,
-                    "identifier": {
-                      "class": "Identifier",
-                      "name": "BackendService",
-                      "moduleUrl": "asset:developer_guide_intro/lib/backend_service.dart",
+                      "name": "TaxRateService",
+                      "moduleUrl": "asset:developer_guide_intro/lib/src/tax_rate_service.dart",
                       "prefix": null,
                       "value": null
                     },
@@ -174,8 +143,8 @@
           },
           "useClass": {
             "class": "Type",
-            "name": "HeroService",
-            "moduleUrl": "asset:developer_guide_intro/lib/hero_service.dart",
+            "name": "SalesTaxService",
+            "moduleUrl": "asset:developer_guide_intro/lib/src/sales_tax_service.dart",
             "prefix": null,
             "isHost": false,
             "value": null,
@@ -185,28 +154,8 @@
                   "value": null,
                   "identifier": {
                     "class": "Identifier",
-                    "name": "Logger",
-                    "moduleUrl": "asset:developer_guide_intro/lib/logger_service.dart",
-                    "prefix": null,
-                    "value": null
-                  },
-                  "identifierIsInstance": false
-                },
-                "value": null,
-                "isAttribute": false,
-                "isSelf": false,
-                "isHost": false,
-                "isSkipSelf": false,
-                "isOptional": false,
-                "isValue": false
-              },
-              {
-                "token": {
-                  "value": null,
-                  "identifier": {
-                    "class": "Identifier",
-                    "name": "BackendService",
-                    "moduleUrl": "asset:developer_guide_intro/lib/backend_service.dart",
+                    "name": "TaxRateService",
+                    "moduleUrl": "asset:developer_guide_intro/lib/src/tax_rate_service.dart",
                     "prefix": null,
                     "value": null
                   },
@@ -221,6 +170,36 @@
                 "isValue": false
               }
             ]
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "TaxRateService",
+              "moduleUrl": "asset:developer_guide_intro/lib/src/tax_rate_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "TaxRateService",
+            "moduleUrl": "asset:developer_guide_intro/lib/src/tax_rate_service.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": []
           },
           "useExisting": null,
           "useValue": null,

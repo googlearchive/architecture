@@ -9,18 +9,6 @@
       {
         "1": "package:developer_guide_intro/app_component.dart",
         "5": false
-      },
-      {
-        "1": "package:developer_guide_intro/backend_service.dart",
-        "5": false
-      },
-      {
-        "1": "package:developer_guide_intro/hero_service.dart",
-        "5": false
-      },
-      {
-        "1": "package:developer_guide_intro/logger_service.dart",
-        "5": false
       }
     ],
     "6": "main.dart",
@@ -32,18 +20,6 @@
       {
         "1": "package:developer_guide_intro/app_component.template.dart",
         "4": "i1"
-      },
-      {
-        "1": "package:developer_guide_intro/backend_service.template.dart",
-        "4": "i2"
-      },
-      {
-        "1": "package:developer_guide_intro/hero_service.template.dart",
-        "4": "i3"
-      },
-      {
-        "1": "package:developer_guide_intro/logger_service.template.dart",
-        "4": "i4"
       }
     ]
   },

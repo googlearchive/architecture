@@ -47,7 +47,7 @@
       "type": {
         "class": "Type",
         "name": "SalesTaxComponent",
-        "moduleUrl": "asset:developer_guide_intro/lib/sales_tax_component.dart",
+        "moduleUrl": "asset:developer_guide_intro/lib/src/sales_tax_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -85,7 +85,7 @@
       "template": {
         "encapsulation": 2,
         "template": "      <h2>Sales Tax Calculator</h2>\n      Amount: <input #amountBox (change)=\"0\">\n\n      <div *ngIf=\"amountBox.value != ''\">\n      The sales tax is\n       {{ getTax(amountBox.value) | currency:'USD':true:'1.2-2' }}\n      </div>\n    ",
-        "templateUrl": "asset:developer_guide_intro/lib/sales_tax_component.dart",
+        "templateUrl": "asset:developer_guide_intro/lib/src/sales_tax_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

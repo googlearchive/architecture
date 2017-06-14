@@ -52,7 +52,7 @@
       "type": {
         "class": "Type",
         "name": "HeroListComponent",
-        "moduleUrl": "asset:developer_guide_intro/lib/hero_list_component.dart",
+        "moduleUrl": "asset:developer_guide_intro/lib/src/hero_list_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -92,7 +92,7 @@
       "template": {
         "encapsulation": 2,
         "template": "<h2>Hero List</h2>\n\n<p><i>Pick a hero from the list</i></p>\n<ul>\n  <li *ngFor=\"let hero of heroes\" (click)=\"selectHero(hero)\">\n    {{hero.name}}\n  </li>\n</ul>\n\n<hero-detail *ngIf=\"selectedHero != null\" [hero]=\"selectedHero\"></hero-detail>\n",
-        "templateUrl": "asset:developer_guide_intro/lib/hero_list_component.html",
+        "templateUrl": "asset:developer_guide_intro/lib/src/hero_list_component.html",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

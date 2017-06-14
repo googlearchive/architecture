@@ -28,7 +28,7 @@
     "Logger": {
       "class": "Type",
       "name": "Logger",
-      "moduleUrl": "asset:developer_guide_intro/lib/logger_service.dart",
+      "moduleUrl": "asset:developer_guide_intro/lib/src/logger_service.dart",
       "prefix": null,
       "isHost": false,
       "value": null,

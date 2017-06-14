@@ -7,11 +7,23 @@
         "5": false
       },
       {
-        "1": "hero_list_component.dart",
+        "1": "src/backend_service.dart",
         "5": false
       },
       {
-        "1": "sales_tax_component.dart",
+        "1": "src/hero_list_component.dart",
+        "5": false
+      },
+      {
+        "1": "src/hero_service.dart",
+        "5": false
+      },
+      {
+        "1": "src/logger_service.dart",
+        "5": false
+      },
+      {
+        "1": "src/sales_tax_component.dart",
         "5": false
       }
     ],
@@ -55,13 +67,35 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <hero-list></hero-list>\n      <sales-tax></sales-tax>",
+        "template": "    <hero-list></hero-list>\n    <sales-tax></sales-tax>\n  ",
         "templateUrl": "asset:developer_guide_intro/lib/app_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
       },
-      "providers": [],
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "BackendService",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "HeroService",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "Logger",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        }
+      ],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
