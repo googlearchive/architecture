@@ -8078,7 +8078,7 @@ w=H.dj(this.c,"$isec")
 v=w.Q
 v.geP(v)
 w=y.jh(x.$4(z.f1(J.cw(w.x)),"USD",!0,"1.2-2"))
-u="The sales tax is"+(w==null?"":H.i(w))
+u="\n      The sales tax is  \n       "+(w==null?"":H.i(w))
 if(!y.a){x=this.y
 x=x!==u}else x=!0
 if(x){this.x.textContent=u
