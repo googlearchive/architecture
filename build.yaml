@@ -1,0 +1,7 @@
+targets:
+  developer_guide_intro:
+    builders:
+      build_web_compilers|entrypoint:
+        options:
+          compiler: dart2js
+  
