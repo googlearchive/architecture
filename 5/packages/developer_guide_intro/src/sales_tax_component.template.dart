@@ -90,7 +90,7 @@ AppView<import1.SalesTaxComponent> viewFactory_SalesTaxComponent0(AppView<dynami
 
 class _ViewSalesTaxComponent1 extends AppView<import1.SalesTaxComponent> {
   import2.DivElement _el_0;
-  import2.Text _text_1;
+  import2.Text _text_2;
   var _expr_0;
   String Function(dynamic, String, bool, String) _pipe_currency_0_0;
   _ViewSalesTaxComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -100,8 +100,10 @@ class _ViewSalesTaxComponent1 extends AppView<import1.SalesTaxComponent> {
   ComponentRef<import1.SalesTaxComponent> build() {
     var doc = import2.document;
     _el_0 = doc.createElement('div');
-    _text_1 = new import2.Text('');
+    import2.Text _text_1 = new import2.Text('\n      The sales tax is  \n       ');
     _el_0.append(_text_1);
+    _text_2 = new import2.Text('');
+    _el_0.append(_text_2);
     _pipe_currency_0_0 = import9.pureProxy4((parentView as ViewSalesTaxComponent0)._pipe_currency_0.transform);
     init0(_el_0);
     return null;
@@ -111,9 +113,9 @@ class _ViewSalesTaxComponent1 extends AppView<import1.SalesTaxComponent> {
   void detectChangesInternal() {
     final import1.SalesTaxComponent _ctx = ctx;
     final local_amountBox = (parentView as ViewSalesTaxComponent0)._el_3;
-    final currVal_0 = import9.interpolate1('\n      The sales tax is  \n       ', _pipe_currency_0_0(_ctx.getTax(local_amountBox.value), 'USD', true, '1.2-2'), '');
+    final currVal_0 = import9.interpolate0(_pipe_currency_0_0(_ctx.getTax(local_amountBox.value), 'USD', true, '1.2-2'));
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
