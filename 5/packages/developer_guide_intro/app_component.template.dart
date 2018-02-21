@@ -13,7 +13,6 @@ import 'src/hero_list_component.dart';
 import 'src/hero_service.dart';
 import 'src/logger_service.dart';
 import 'src/sales_tax_component.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'src/backend_service.template.dart' as _ref1;
@@ -21,7 +20,6 @@ import 'src/hero_list_component.template.dart' as _ref2;
 import 'src/hero_service.template.dart' as _ref3;
 import 'src/logger_service.template.dart' as _ref4;
 import 'src/sales_tax_component.template.dart' as _ref5;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'app_component.dart' as import1;
 import 'dart:html' as import2;
@@ -199,14 +197,12 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(AppComponent, AppComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
-  _ngRef.registerComponent(
-    AppComponent,
-    AppComponentNgFactory,
-  );
 }

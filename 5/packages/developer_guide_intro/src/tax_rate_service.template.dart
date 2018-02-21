@@ -8,7 +8,6 @@
 import 'tax_rate_service.dart';
 export 'tax_rate_service.dart';
 import 'package:angular/angular.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 
@@ -18,9 +17,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerFactory(TaxRateService, () => new TaxRateService());
   _ref0.initReflector();
-  _ngRef.registerFactory(
-    TaxRateService,
-    () => new TaxRateService(),
-  );
 }
