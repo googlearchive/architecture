@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -36,7 +34,7 @@ class ViewSalesTaxComponent0 extends AppView<import1.SalesTaxComponent> {
   import2.Element _el_0;
   import2.InputElement _el_3;
   ViewContainer _appEl_4;
-  NgIf _NgIf_4_7;
+  NgIf _NgIf_4_9;
   import5.CurrencyPipe _pipe_currency_0;
   static RenderComponentType _renderType;
   ViewSalesTaxComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -57,8 +55,8 @@ class ViewSalesTaxComponent0 extends AppView<import1.SalesTaxComponent> {
     var _anchor_4 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, null, this, _anchor_4);
-    TemplateRef _TemplateRef_4_6 = new TemplateRef(_appEl_4, viewFactory_SalesTaxComponent1);
-    _NgIf_4_7 = new NgIf(_appEl_4, _TemplateRef_4_6);
+    TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_SalesTaxComponent1);
+    _NgIf_4_9 = new NgIf(_appEl_4, _TemplateRef_4_8);
     _el_3.addEventListener('change', eventHandler1(_handle_change_3_0));
     _pipe_currency_0 = new import5.CurrencyPipe();
     init(const [], null);
@@ -68,7 +66,7 @@ class ViewSalesTaxComponent0 extends AppView<import1.SalesTaxComponent> {
   @override
   void detectChangesInternal() {
     final local_amountBox = _el_3;
-    _NgIf_4_7.ngIf = (local_amountBox.value != '');
+    _NgIf_4_9.ngIf = (local_amountBox.value != '');
     _appEl_4.detectChangesInNestedViews();
   }
 
@@ -127,32 +125,29 @@ const List<dynamic> styles$SalesTaxComponentHost = const [];
 
 class _ViewSalesTaxComponentHost0 extends AppView<dynamic> {
   ViewSalesTaxComponent0 _compView_0;
-  import13.TaxRateService _TaxRateService_0_4;
-  import14.SalesTaxService _SalesTaxService_0_5;
-  import1.SalesTaxComponent _SalesTaxComponent_0_6;
+  import13.TaxRateService _TaxRateService_0_5;
+  import14.SalesTaxService _SalesTaxService_0_6;
+  import1.SalesTaxComponent _SalesTaxComponent_0_7;
   _ViewSalesTaxComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewSalesTaxComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _TaxRateService_0_4 = new import13.TaxRateService();
-    _SalesTaxService_0_5 = new import14.SalesTaxService(_TaxRateService_0_4);
-    _SalesTaxComponent_0_6 = new import1.SalesTaxComponent(_SalesTaxService_0_5);
-    _compView_0.create(_SalesTaxComponent_0_6, projectableNodes);
+    _TaxRateService_0_5 = new import13.TaxRateService();
+    _SalesTaxService_0_6 = new import14.SalesTaxService(_TaxRateService_0_5);
+    _SalesTaxComponent_0_7 = new import1.SalesTaxComponent(_SalesTaxService_0_6);
+    _compView_0.create(_SalesTaxComponent_0_7, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.SalesTaxComponent>(0, this, rootEl, _SalesTaxComponent_0_6);
+    return new ComponentRef<import1.SalesTaxComponent>(0, this, rootEl, _SalesTaxComponent_0_7);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import13.TaxRateService) && (0 == nodeIndex))) {
-      return _TaxRateService_0_4;
+      return _TaxRateService_0_5;
     }
     if ((identical(token, import14.SalesTaxService) && (0 == nodeIndex))) {
-      return _SalesTaxService_0_5;
-    }
-    if ((identical(token, import1.SalesTaxComponent) && (0 == nodeIndex))) {
-      return _SalesTaxComponent_0_6;
+      return _SalesTaxService_0_6;
     }
     return notFoundResult;
   }

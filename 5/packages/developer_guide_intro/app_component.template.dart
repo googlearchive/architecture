@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -43,13 +41,13 @@ const List<dynamic> styles$AppComponent = const [];
 class ViewAppComponent0 extends AppView<import1.AppComponent> {
   import2.Element _el_0;
   import3.ViewHeroListComponent0 _compView_0;
-  import4.HeroService _HeroService_0_4;
-  import5.HeroListComponent _HeroListComponent_0_5;
+  import4.HeroService _HeroService_0_5;
+  import5.HeroListComponent _HeroListComponent_0_6;
   import2.Element _el_1;
   import6.ViewSalesTaxComponent0 _compView_1;
-  import7.TaxRateService _TaxRateService_1_4;
-  import8.SalesTaxService _SalesTaxService_1_5;
-  import9.SalesTaxComponent _SalesTaxComponent_1_6;
+  import7.TaxRateService _TaxRateService_1_5;
+  import8.SalesTaxService _SalesTaxService_1_6;
+  import9.SalesTaxComponent _SalesTaxComponent_1_7;
   static RenderComponentType _renderType;
   ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-app');
@@ -62,16 +60,16 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _compView_0 = new import3.ViewHeroListComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
-    _HeroService_0_4 = new import4.HeroService(parentView.injectorGet(import15.Logger, viewData.parentIndex), parentView.injectorGet(import16.BackendService, viewData.parentIndex));
-    _HeroListComponent_0_5 = new import5.HeroListComponent(_HeroService_0_4);
-    _compView_0.create(_HeroListComponent_0_5, []);
+    _HeroService_0_5 = new import4.HeroService(parentView.injectorGet(import15.Logger, viewData.parentIndex), parentView.injectorGet(import16.BackendService, viewData.parentIndex));
+    _HeroListComponent_0_6 = new import5.HeroListComponent(_HeroService_0_5);
+    _compView_0.create(_HeroListComponent_0_6, []);
     _compView_1 = new import6.ViewSalesTaxComponent0(this, 1);
     _el_1 = _compView_1.rootEl;
     parentRenderNode.append(_el_1);
-    _TaxRateService_1_4 = new import7.TaxRateService();
-    _SalesTaxService_1_5 = new import8.SalesTaxService(_TaxRateService_1_4);
-    _SalesTaxComponent_1_6 = new import9.SalesTaxComponent(_SalesTaxService_1_5);
-    _compView_1.create(_SalesTaxComponent_1_6, []);
+    _TaxRateService_1_5 = new import7.TaxRateService();
+    _SalesTaxService_1_6 = new import8.SalesTaxService(_TaxRateService_1_5);
+    _SalesTaxComponent_1_7 = new import9.SalesTaxComponent(_SalesTaxService_1_6);
+    _compView_1.create(_SalesTaxComponent_1_7, []);
     init(const [], null);
     return null;
   }
@@ -79,19 +77,13 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import4.HeroService) && (0 == nodeIndex))) {
-      return _HeroService_0_4;
-    }
-    if ((identical(token, import5.HeroListComponent) && (0 == nodeIndex))) {
-      return _HeroListComponent_0_5;
+      return _HeroService_0_5;
     }
     if ((identical(token, import7.TaxRateService) && (1 == nodeIndex))) {
-      return _TaxRateService_1_4;
+      return _TaxRateService_1_5;
     }
     if ((identical(token, import8.SalesTaxService) && (1 == nodeIndex))) {
-      return _SalesTaxService_1_5;
-    }
-    if ((identical(token, import9.SalesTaxComponent) && (1 == nodeIndex))) {
-      return _SalesTaxComponent_1_6;
+      return _SalesTaxService_1_6;
     }
     return notFoundResult;
   }
@@ -100,7 +92,7 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _HeroListComponent_0_5.ngOnInit();
+      _HeroListComponent_0_6.ngOnInit();
     }
     _compView_0.detectChanges();
     _compView_1.detectChanges();
@@ -121,55 +113,52 @@ const List<dynamic> styles$AppComponentHost = const [];
 
 class _ViewAppComponentHost0 extends AppView<dynamic> {
   ViewAppComponent0 _compView_0;
-  import1.AppComponent _AppComponent_0_4;
-  import15.Logger __Logger_0_5;
-  import16.BackendService __BackendService_0_6;
-  import4.HeroService __HeroService_0_7;
+  import1.AppComponent _AppComponent_0_5;
+  import15.Logger __Logger_0_6;
+  import16.BackendService __BackendService_0_7;
+  import4.HeroService __HeroService_0_8;
   _ViewAppComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
-  import15.Logger get _Logger_0_5 {
-    if ((this.__Logger_0_5 == null)) {
-      (__Logger_0_5 = new import15.Logger());
+  import15.Logger get _Logger_0_6 {
+    if ((this.__Logger_0_6 == null)) {
+      (__Logger_0_6 = new import15.Logger());
     }
-    return this.__Logger_0_5;
+    return this.__Logger_0_6;
   }
 
-  import16.BackendService get _BackendService_0_6 {
-    if ((this.__BackendService_0_6 == null)) {
-      (__BackendService_0_6 = new import16.BackendService(this._Logger_0_5));
+  import16.BackendService get _BackendService_0_7 {
+    if ((this.__BackendService_0_7 == null)) {
+      (__BackendService_0_7 = new import16.BackendService(this._Logger_0_6));
     }
-    return this.__BackendService_0_6;
+    return this.__BackendService_0_7;
   }
 
-  import4.HeroService get _HeroService_0_7 {
-    if ((this.__HeroService_0_7 == null)) {
-      (__HeroService_0_7 = new import4.HeroService(this._Logger_0_5, this._BackendService_0_6));
+  import4.HeroService get _HeroService_0_8 {
+    if ((this.__HeroService_0_8 == null)) {
+      (__HeroService_0_8 = new import4.HeroService(this._Logger_0_6, this._BackendService_0_7));
     }
-    return this.__HeroService_0_7;
+    return this.__HeroService_0_8;
   }
 
   @override
   ComponentRef build() {
     _compView_0 = new ViewAppComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _AppComponent_0_4 = new import1.AppComponent();
-    _compView_0.create(_AppComponent_0_4, projectableNodes);
+    _AppComponent_0_5 = new import1.AppComponent();
+    _compView_0.create(_AppComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.AppComponent>(0, this, rootEl, _AppComponent_0_4);
+    return new ComponentRef<import1.AppComponent>(0, this, rootEl, _AppComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.AppComponent) && (0 == nodeIndex))) {
-      return _AppComponent_0_4;
-    }
     if ((identical(token, import15.Logger) && (0 == nodeIndex))) {
-      return _Logger_0_5;
+      return _Logger_0_6;
     }
     if ((identical(token, import16.BackendService) && (0 == nodeIndex))) {
-      return _BackendService_0_6;
+      return _BackendService_0_7;
     }
     if ((identical(token, import4.HeroService) && (0 == nodeIndex))) {
-      return _HeroService_0_7;
+      return _HeroService_0_8;
     }
     return notFoundResult;
   }
