@@ -48,14 +48,15 @@ class ViewHeroDetailComponent0 extends AppView<import1.HeroDetailComponent> {
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewHeroDetailComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHeroDetailComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('hero-detail');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$HeroDetailComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.HeroDetailComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'hr', parentRenderNode);
     _el_1 = createAndAppend(doc, 'h4', parentRenderNode);
@@ -161,7 +162,7 @@ class ViewHeroDetailComponent0 extends AppView<import1.HeroDetailComponent> {
   }
 }
 
-AppView<import1.HeroDetailComponent> viewFactory_HeroDetailComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.HeroDetailComponent> viewFactory_HeroDetailComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewHeroDetailComponent0(parentView, parentIndex);
 }
 
@@ -170,7 +171,7 @@ const List<dynamic> styles$HeroDetailComponentHost = const [];
 class _ViewHeroDetailComponentHost0 extends AppView<dynamic> {
   ViewHeroDetailComponent0 _compView_0;
   import1.HeroDetailComponent _HeroDetailComponent_0_5;
-  _ViewHeroDetailComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHeroDetailComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroDetailComponent0(this, 0);
@@ -192,7 +193,7 @@ class _ViewHeroDetailComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_HeroDetailComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_HeroDetailComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHeroDetailComponentHost0(parentView, parentIndex);
 }
 

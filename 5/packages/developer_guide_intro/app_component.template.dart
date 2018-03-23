@@ -49,14 +49,15 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   import8.SalesTaxService _SalesTaxService_1_6;
   import9.SalesTaxComponent _SalesTaxComponent_1_7;
   static RenderComponentType _renderType;
-  ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-app');
     _renderType ??= import13.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$AppComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.AppComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     _compView_0 = new import3.ViewHeroListComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
@@ -105,7 +106,7 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   }
 }
 
-AppView<import1.AppComponent> viewFactory_AppComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.AppComponent> viewFactory_AppComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewAppComponent0(parentView, parentIndex);
 }
 
@@ -114,27 +115,27 @@ const List<dynamic> styles$AppComponentHost = const [];
 class _ViewAppComponentHost0 extends AppView<dynamic> {
   ViewAppComponent0 _compView_0;
   import1.AppComponent _AppComponent_0_5;
-  import15.Logger __Logger_0_6;
-  import16.BackendService __BackendService_0_7;
+  import16.BackendService __BackendService_0_6;
+  import15.Logger __Logger_0_7;
   import4.HeroService __HeroService_0_8;
-  _ViewAppComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
-  import15.Logger get _Logger_0_6 {
-    if ((this.__Logger_0_6 == null)) {
-      (__Logger_0_6 = new import15.Logger());
+  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import16.BackendService get _BackendService_0_6 {
+    if ((this.__BackendService_0_6 == null)) {
+      (__BackendService_0_6 = new import16.BackendService());
     }
-    return this.__Logger_0_6;
+    return this.__BackendService_0_6;
   }
 
-  import16.BackendService get _BackendService_0_7 {
-    if ((this.__BackendService_0_7 == null)) {
-      (__BackendService_0_7 = new import16.BackendService(this._Logger_0_6));
+  import15.Logger get _Logger_0_7 {
+    if ((this.__Logger_0_7 == null)) {
+      (__Logger_0_7 = new import15.Logger());
     }
-    return this.__BackendService_0_7;
+    return this.__Logger_0_7;
   }
 
   import4.HeroService get _HeroService_0_8 {
     if ((this.__HeroService_0_8 == null)) {
-      (__HeroService_0_8 = new import4.HeroService(this._Logger_0_6, this._BackendService_0_7));
+      (__HeroService_0_8 = new import4.HeroService(this._Logger_0_7, this._BackendService_0_6));
     }
     return this.__HeroService_0_8;
   }
@@ -151,11 +152,11 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import15.Logger) && (0 == nodeIndex))) {
-      return _Logger_0_6;
-    }
     if ((identical(token, import16.BackendService) && (0 == nodeIndex))) {
-      return _BackendService_0_7;
+      return _BackendService_0_6;
+    }
+    if ((identical(token, import15.Logger) && (0 == nodeIndex))) {
+      return _Logger_0_7;
     }
     if ((identical(token, import4.HeroService) && (0 == nodeIndex))) {
       return _HeroService_0_8;
@@ -174,7 +175,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_AppComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_AppComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponentHost0(parentView, parentIndex);
 }
 

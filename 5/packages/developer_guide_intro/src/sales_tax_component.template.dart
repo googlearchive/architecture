@@ -37,14 +37,15 @@ class ViewSalesTaxComponent0 extends AppView<import1.SalesTaxComponent> {
   NgIf _NgIf_4_9;
   import5.CurrencyPipe _pipe_currency_0;
   static RenderComponentType _renderType;
-  ViewSalesTaxComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewSalesTaxComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('sales-tax');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$SalesTaxComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.SalesTaxComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'h2', parentRenderNode);
     import2.Text _text_1 = new import2.Text('Sales Tax Calculator');
@@ -80,7 +81,7 @@ class ViewSalesTaxComponent0 extends AppView<import1.SalesTaxComponent> {
   }
 }
 
-AppView<import1.SalesTaxComponent> viewFactory_SalesTaxComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.SalesTaxComponent> viewFactory_SalesTaxComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewSalesTaxComponent0(parentView, parentIndex);
 }
 
@@ -89,7 +90,7 @@ class _ViewSalesTaxComponent1 extends AppView<import1.SalesTaxComponent> {
   import2.Text _text_2;
   var _expr_0;
   String Function(dynamic, String, bool, String) _pipe_currency_0_0;
-  _ViewSalesTaxComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSalesTaxComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSalesTaxComponent0._renderType;
   }
   @override
@@ -117,7 +118,7 @@ class _ViewSalesTaxComponent1 extends AppView<import1.SalesTaxComponent> {
   }
 }
 
-AppView<import1.SalesTaxComponent> viewFactory_SalesTaxComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.SalesTaxComponent> viewFactory_SalesTaxComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSalesTaxComponent1(parentView, parentIndex);
 }
 
@@ -128,7 +129,7 @@ class _ViewSalesTaxComponentHost0 extends AppView<dynamic> {
   import13.TaxRateService _TaxRateService_0_5;
   import14.SalesTaxService _SalesTaxService_0_6;
   import1.SalesTaxComponent _SalesTaxComponent_0_7;
-  _ViewSalesTaxComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewSalesTaxComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewSalesTaxComponent0(this, 0);
@@ -163,7 +164,7 @@ class _ViewSalesTaxComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_SalesTaxComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_SalesTaxComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSalesTaxComponentHost0(parentView, parentIndex);
 }
 
