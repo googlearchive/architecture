@@ -16,7 +16,7 @@ import 'tax_rate_service.dart';
     ''',
     directives: [coreDirectives],
     providers: [SalesTaxService, TaxRateService],
-    pipes: [COMMON_PIPES])
+    pipes: [commonPipes])
 class SalesTaxComponent {
   SalesTaxService _salesTaxService;
 
