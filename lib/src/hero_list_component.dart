@@ -8,8 +8,8 @@ import 'hero_service.dart';
 @Component(
   selector: 'hero-list',
   templateUrl: 'hero_list_component.html',
-  directives: const [CORE_DIRECTIVES, formDirectives, HeroDetailComponent],
-  providers: const [HeroService],
+  directives: [coreDirectives, formDirectives, HeroDetailComponent],
+  providers: [HeroService],
 )
 class HeroListComponent implements OnInit {
   List<Hero> heroes;
@@ -18,8 +18,8 @@ class HeroListComponent implements OnInit {
 
   HeroListComponent(this._heroService);
 
-  void ngOnInit() {
-    heroes = _heroService.getHeroes();
+  void ngOnInit() async {
+    heroes = await _heroService.getAll();
   }
 
   void selectHero(Hero hero) {
