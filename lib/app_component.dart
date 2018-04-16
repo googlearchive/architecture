@@ -13,6 +13,10 @@ import 'src/sales_tax_component.dart';
     <sales-tax></sales-tax>
   ''',
   directives: [HeroListComponent, SalesTaxComponent],
-  providers: [BackendService, HeroService, Logger],
+  providers: [
+    const ClassProvider(BackendService),
+    const ClassProvider(HeroService),
+    const ClassProvider(Logger),
+  ],
 )
 class AppComponent {}
