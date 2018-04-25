@@ -95,17 +95,11 @@ class ViewHeroDetailComponent0 extends AppView<import1.HeroDetailComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import3.DefaultValueAccessor) && (9 == nodeIndex))) {
-      return _DefaultValueAccessor_9_5;
-    }
     if ((identical(token, const import11.MultiToken<import12.ControlValueAccessor>('NgValueAccessor')) && (9 == nodeIndex))) {
       return _NgValueAccessor_9_6;
     }
     if (((identical(token, import5.NgModel) || identical(token, import13.NgControl)) && (9 == nodeIndex))) {
       return _NgModel_9_7;
-    }
-    if ((identical(token, import3.DefaultValueAccessor) && (12 == nodeIndex))) {
-      return _DefaultValueAccessor_12_5;
     }
     if ((identical(token, const import11.MultiToken<import12.ControlValueAccessor>('NgValueAccessor')) && (12 == nodeIndex))) {
       return _NgValueAccessor_12_6;
