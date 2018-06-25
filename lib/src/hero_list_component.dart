@@ -9,7 +9,7 @@ import 'hero_service.dart';
   selector: 'hero-list',
   templateUrl: 'hero_list_component.html',
   directives: [coreDirectives, formDirectives, HeroDetailComponent],
-  providers: [const ClassProvider(HeroService)],
+  providers: [ClassProvider(HeroService)],
 )
 class HeroListComponent implements OnInit {
   List<Hero> heroes;
